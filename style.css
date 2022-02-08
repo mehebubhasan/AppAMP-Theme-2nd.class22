@@ -1,0 +1,295 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* HEADER CSS START */
+.header-img a img{
+    width: 60px;
+}
+.header-img a span{
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+}
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+}
+.header-menu ul li ul {
+    position: absolute;
+    top: 107%;
+    left: 0;
+    width: 190px;
+    z-index: 999;
+    background-color: #fff;
+    padding-left: 0;
+    transition: .3s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.header-menu ul li ul li{
+    margin-right: 0;
+    margin-left: 0;
+}
+.header-btn a {
+    color: #6278df;
+    font-weight: 700;
+    padding: 10px 29px;
+    border: 1px solid;
+    border-radius: 6px;
+    transition: .5s;
+}
+.header-btn a:hover{
+    background-color: #6278df;
+    color: white;
+}
+/* HEADER CSS END */
+
+/* BANNER CSS START */
+.banner{
+    background-image: url(./img/ia_100000020.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: -1;
+}
+.banner-conten h5{
+    font-weight: 300;
+    font-size: 27px;
+}
+.banner-conten h1 {
+    font-size: 51px;
+    font-weight: 500;
+}
+/* BANNER CSS END */
+
+
+/* SKILL SECTION CSS START */
+.skill-content{
+    padding: 60px 0; 
+}
+.skill-content span {
+    color: black;
+    font-size: 60px;
+    font-weight: 500;
+    
+}
+
+/* SKILL SECTION CSS END */
+
+
+/* ACTIVITY SECTION CSS START */
+.activity-content{
+    margin-top:150px;
+}
+.activiti-img img{
+    height: 470px;
+}
+/* ACTIVITY SECTION CSS END */
+
+
+
+/* ABOUT CSS START */
+.maincard{
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    position: relative;
+    transition: .5s;
+    
+}
+.maincard:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.192);
+}
+.about-header p {
+    font-size: 28px;
+    color: rgb(88, 87, 87);
+}
+.about-img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+}
+.card-body p {
+    font-size: 17px;
+    
+}
+/* ABOUT CSS END */
+
+/* APPLACATION START */
+.main-applacation{
+   position: relative; 
+}
+.main-applacation::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(74, 72, 184, 0.801);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+.main-applacation:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* APPLACATION END */
+
+/* USER SECTION START */
+.user-card{
+    transition: .4s;
+    border-radius: 5px;
+}
+.user-card p{
+    font-size: 22px;
+}
+.user-card ul{
+    padding-left: 0;
+}
+.user-card ul li{
+    padding: 20px 0;
+    font-size: 20px;
+}
+.user-card ul li i{
+    margin-right: 8px;
+    color: #6278df;
+    font-weight: 700;
+}
+.user-card a {
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 13px 0;
+    font-size: 22px;
+    font-weight: 600;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+    transition: .5s;
+}
+.user-card:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.192); 
+} 
+.user-card:hover a{
+    background-color: #6278df;
+    color: white;
+}
+.user-card a:hover{
+    background-color: black;
+} 
+/* USER SECTION END */
+
+/* WHAT SECTION CSS START */
+.main-what i {
+    font-size: 94px;
+    margin: 20px 0;
+    opacity: 0.2;
+}
+.what-user{
+    width: 222px;
+}
+.left-img img{
+    width: 80px;
+    border-radius: 50px;
+}
+/* WHAT SECTION CSS END */
+
+
+/* TEAM SECTION START */
+.b-card {
+    background-color: #fff;
+    padding: 98px 17px 30px 26px;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(83, 103, 190, 0.2);
+    border-radius: 5px;
+    transition: .3s;
+}
+.b-card:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(53, 81, 206, 0.2); 
+}
+.b-card img {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    border-radius: 88px;
+    width: 130px;
+}
+.b-card a {
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+    border-radius: 8px;
+    transition: .5s;
+}
+.b-card a:hover{
+    color: white;
+    background-color: rgb(87, 87, 87);
+}
+/* TEAM SECTION EMD */
+
+
+/* PHON SECTION START */
+.phon-btn a {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: 2px solid #5ba533;
+    color: #5ba533;
+    border-radius: 7px;
+    transition: .5s;
+}
+.phon-btn a:hover{
+    background-color: #5ba533;
+    color: white;
+    box-shadow: 3px 3px 27px -3px #5ba533;
+}
+.phon-btn .a2{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: 2px solid #5ba533;
+    background-color:#5ba533;
+    border-radius: 7px; 
+    color: white;
+    box-shadow: 3px 3px 27px -3px #5ba533;
+}
+.phon-btn .a2:hover{
+    border: 2px solid black;
+    background-color: black;
+    box-shadow: none;
+}
+
+/* PHON SECTION END */
